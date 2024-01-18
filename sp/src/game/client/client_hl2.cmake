@@ -1,7 +1,7 @@
 # client_hl2.cmake
 
 include("${CMAKE_CURRENT_LIST_DIR}/client_base.cmake")
-
+include("${CMAKE_CURRENT_LIST_DIR}/client_sntutorialclient.cmake")
 set(CLIENT_HL2_DIR ${CMAKE_CURRENT_LIST_DIR})
 set(
 	CLIENT_HL2_SOURCE_FILES
@@ -93,6 +93,9 @@ set(
 	"${CLIENT_HL2_DIR}/hl2/shieldproxy.cpp"
 	"${CLIENT_HL2_DIR}/hl2/vgui_rootpanel_hl2.cpp"
 	"${CLIENT_HL2_DIR}/episodic/c_vort_charge_token.cpp"
+
+	# Source Newcomer Tutorial Code
+	"${CLIENT_SNT_SOURCE_FILES}"
 )
 
 set(
